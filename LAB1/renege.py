@@ -1,8 +1,8 @@
 
 import json
-import sys
-from crud import CRUD
-from email_analyzer import EmailAnalyzer
+# import sys
+# from crud import CRUD
+# from email_analyzer import EmailAnalyzer
 
 
 class RENEGE:

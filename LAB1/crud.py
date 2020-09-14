@@ -5,11 +5,11 @@ class CRUD:
     """
     Classe pour realiser la fonctionalite CRUD.
     """
-
+    DEFAULT_TRUST_VALUE = 50
     def __init__(self):
         self.users_file = "users.json"
         self.groups_file = "groups.json"
-
+        self.default_trust = 50
     ##*************CREATE**************
 
     def add_new_user(self, user_email, date):
@@ -20,17 +20,50 @@ class CRUD:
         Sortie: bool, 'True' pour succes, 'False' dans le cas de failure.
         '''
 
-        raise NotImplementedError("")
+        # Read the number of users.
+        users = self.read_users_file()
+        keylist = sorted(users)
+        new_users = int(keylist[-1]) + 1
+        data = {
+            str(new_users): {
+            "name": user_email,
+            "Trust": self.default_trust,
+            "SpamN" : 0,
+            "HamN" : 0,
+            "Date_of_first_seen_message" : date,
+            "Date_of_last_seen_message" : date,
+            "Groups" :["default"]
+            }
+        }
+        users.update(data)
+        with open(self.users_file, 'w') as outfile:
+            json.dump(users, outfile, indent=4)
+        
+        return True
+        # raise NotImplementedError("")
 
-    def add_new_group(self, name, trust, members_list):
+    def add_new_group(self, name, members_list ,trust = DEFAULT_TRUST_VALUE):
         '''
         Description: fonction pour ajouter une grouppe  
         dans le fichier 'groups.json', selon le format donne dans 
         la description du lab
         Sortie: bool, 'True' pour succes, 'False' dans le cas de failure.
         '''
-        raise NotImplementedError("")
+        users = self.read_groups_file()
+        keylist = sorted(users)
+        new_users = int(keylist[-1]) + 1
+        data = {
+            str(new_users): {
+            "name": name,
+            "Trust": self.default_trust,
+            "List of members" : members_list
+            }
+        }
+        users.update(data)
+        with open(self.groups_file, 'w') as outfile:
+            json.dump(users, outfile, indent=4)
 
+        return True
     ###***********READ****************
     def read_users_file(self):
         '''
@@ -60,8 +93,9 @@ class CRUD:
         numero de messages spam pour utilisateur avec id 2.
         Sortie: la valeur d'information specifie pour utilisateur
         '''
-        raise NotImplementedError("")
-
+        users = self.read_users_file()
+        return users[str(user_id)][str(field)]    
+        
     def get_group_data(self, group_id, field):
         '''
         Description: fonction qui sorte la valeur d'information specifie
@@ -70,8 +104,8 @@ class CRUD:
         valeur de "Trust" pour grouppe avec id 2.
         Sortie: la valeur d'information specifie pour le grouppe
         '''
-
-        raise NotImplementedError("")
+        users = self.read_groups_file()
+        return users[str(group_id)][str(field)]  
 
     def get_user_id(self, name):
         '''

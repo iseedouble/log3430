@@ -1,1 +1,82 @@
-À implementer
+{
+    "1": {
+        "name": "default",
+        "Trust": 50,
+        "List_of_memebers": [
+            "GP@paris.com",
+            "farmer@paris.com"
+        ]
+    },
+    "2": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "3": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "4": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "5": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "6": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "7": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "8": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "9": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    },
+    "10": {
+        "name": "default2",
+        "Trust": 50,
+        "List of members": [
+            "test@hotmail.com",
+            "test2@polymtl.ca"
+        ]
+    }
+}

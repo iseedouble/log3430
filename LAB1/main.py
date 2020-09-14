@@ -1,8 +1,8 @@
 import json
-from vocabulary_creator import VocabularyCreator
-from renege import RENEGE
-from email_analyzer import EmailAnalyzer
-
+# from vocabulary_creator import VocabularyCreator
+# from renege import RENEGE
+# from email_analyzer import EmailAnalyzer
+from crud import CRUD
 
 def evaluate():
     tp = 0
@@ -36,14 +36,19 @@ def evaluate():
 
 
 if __name__ == "__main__":
-
+    print("test")
+    crud = CRUD()
+    # crud.add_new_user("test", "date")
+    # crud.add_new_group("default2", ["test@hotmail.com", "test2@polymtl.ca"])
+    print(crud.get_user_data(2,"name"))
+    print(crud.get_group_data(2,"name"))
     # 1. Creation de vocabulaire.
-    vocab = VocabularyCreator()
-    vocab.create_vocab()
+    # vocab = VocabularyCreator()
+    # vocab.create_vocab()
 
-    # 2. Classification des emails et initialisation de utilisateurs et groupes.
-    renege = RENEGE()
-    renege.classify_emails()
+    # # 2. Classification des emails et initialisation de utilisateurs et groupes.
+    # renege = RENEGE()
+    # renege.classify_emails()
 
-    #3. Evaluation de performance du modele avec la fonction evaluate()
-    evaluate()
+    # #3. Evaluation de performance du modele avec la fonction evaluate()
+    # evaluate()

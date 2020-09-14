@@ -1,1 +1,97 @@
-À implementer
+{
+    "1": {
+        "name": "admin@test.com",
+        "Trust": 100,
+        "SpamN": 0,
+        "HamN": 10,
+        "Date_of_first_seen_message": 1596848266.0,
+        "Date_of_last_seen_message": 1596846550.0
+    },
+    "2": {
+        "name": "spam@test.com",
+        "Trust": 0.0,
+        "SpamN": 12,
+        "HamN": 0,
+        "Date_of_first_seen_message": 1596845166.0,
+        "Date_of_last_seen_message": 1596846059.0
+    },
+    "3": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date"
+    },
+    "4": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date"
+    },
+    "5": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date"
+    },
+    "6": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date",
+        "Groups": [
+            "default"
+        ]
+    },
+    "7": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date",
+        "Groups": [
+            "default"
+        ]
+    },
+    "8": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date",
+        "Groups": [
+            "default"
+        ]
+    },
+    "9": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date",
+        "Groups": [
+            "default"
+        ]
+    },
+    "10": {
+        "name": "test",
+        "Trust": 50,
+        "SpamN": 0,
+        "HamN": 0,
+        "Date_of_first_seen_message": "date",
+        "Date_of_last_seen_message": "date",
+        "Groups": [
+            "default"
+        ]
+    }
+}
